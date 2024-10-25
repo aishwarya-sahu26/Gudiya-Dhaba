@@ -1,0 +1,42 @@
+{% load static %}
+
+<footer class="footer bg-dark text-light py-4 mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5 class="text-white">About Us</h5>
+                <p class="text-muted">Serving delicious cuisine since 2001. Our passion is to provide an exceptional dining experience with the finest ingredients and impeccable service.</p>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5 class="text-white">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'view_menu' %}" class="text-muted">Menu</a></li>
+                    <li><a href="#" class="text-muted">Reservations</a></li>
+                    <li><a href="#" class="text-muted">Special Events</a></li>
+                    <li><a href="#" class="text-muted">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-white">Contact Information</h5>
+                <address class="text-muted">
+                    123 Gourmet Street<br>
+                    Foodie City, FC 12345<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:info@restaurantmenu.com" class="text-muted">info@restaurantmenu.com</a>
+                </address>
+            </div>
+        </div>
+        <hr class="my-4 bg-secondary">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center text-muted">
+                <span>&copy; 2024 Restaurant Menu. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<!-- Add Font Awesome for social media icons -->
+<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>

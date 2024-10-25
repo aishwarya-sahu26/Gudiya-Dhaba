@@ -1,0 +1,227 @@
+{% extends "menu/header.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Menu</h2>
+            </div>
+            <div class="card-body">
+                <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">Add New Item</a>
+                <ul class="list-group">
+                    {% for item in items %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>{{ item.name }} - ₹{{ item.price }}</span>
+                        <div>
+                            <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning me-2">Update</a>
+                            <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+<!-- {% include "menu/partial.html" %}
+<h1>Menu</h1>
+<a href="{% url 'add_menu_item' %}">Add New Item</a>
+<ul>
+    {% for item in items %}
+        <li>{{ item.name }} - ${{ item.price }}
+            <a href="{% url 'update_menu_item' item.pk %}">Update</a>
+            <a href="{% url 'delete_menu_item' item.pk %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul> -->
+
+
+
+<!-- 
+{% include "menu/partial.html" %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2 class="mb-0">Menu</h2>
+                </div>
+                <div class="card-body">
+                    <a href="{% url 'add_menu_item' %}" class="btn btn-success mb-3">
+                        <i class="fas fa-plus-circle"></i> Add New Item
+                    </a>
+                    <ul class="list-group">
+                        {% for item in items %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>{{ item.name }} - ₹{{ item.price }}</span>
+                                <div>
+                                    <a href="{% url 'update_menu_item' item.pk %}" class="btn btn-sm btn-warning mr-2">
+                                        <i class="fas fa-edit"></i> Update
+                                    </a>
+                                    <a href="{% url 'delete_menu_item' item.pk %}" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </a>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

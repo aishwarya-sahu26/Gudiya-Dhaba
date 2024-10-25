@@ -1,0 +1,63 @@
+{% extends "menu/header.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-header bg-danger text-white text-center">
+                <h2 class="mb-0">Delete Menu Item</h2>
+            </div>
+            <div class="card-body text-center">
+                <p class="lead">Are you sure you want to delete <strong>"{{ item.name }}"</strong>?</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Confirm</button>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'view_menu' %}" class="btn btn-secondary">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% include "menu/footer.html" %}
+
+
+
+
+<!-- {% include "menu/partial.html" %}
+<h1>Delete Menu Item</h1>
+<p>Are you sure you want to delete "{{ item.name }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirm</button>
+</form>
+<a href="{% url 'view_menu' %}">Back to Menu</a> -->
+
+
+
+
+<!-- {% include "menu/partial.html" %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg" style="width: 400px;">
+        <div class="card-header bg-danger text-white text-center">
+            <h2 class="mb-0">Delete Menu Item</h2>
+        </div>
+        <div class="card-body text-center">
+            <p class="lead">Are you sure you want to delete <strong>"{{ item.name }}"</strong>?</p>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger btn-block">
+                    <i class="fas fa-trash-alt"></i> Confirm
+                </button>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <a href="{% url 'view_menu' %}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to Menu
+            </a>
+        </div>
+    </div>
+</div> -->

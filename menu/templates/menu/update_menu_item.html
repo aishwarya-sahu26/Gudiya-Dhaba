@@ -1,0 +1,76 @@
+{% extends "menu/header.html" %}
+{% load widget_tweaks %}
+
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white text-center">
+                <h2 class="mb-0">Update Menu Item</h2>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="mb-3">
+                            <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                            {% if field.field.widget.input_type == 'checkbox' %}
+                                <div class="form-check">
+                                    {% render_field field class="form-check-input" %}
+                                </div>
+                            {% else %}
+                                {% render_field field class="form-control" %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Update Item</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'view_menu' %}" class="btn btn-secondary">Back to Menu</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% include "menu/footer.html" %}
+
+<!-- {% include "menu/partial.html" %}
+<h1>Update Menu Item</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update Item</button>
+</form>
+<a href="{% url 'view_menu' %}">Back to Menu</a> -->
+
+
+
+
+<!-- {% include "menu/partial.html" %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg" style="width: 500px;">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="mb-0">Update Menu Item</h2>
+        </div>
+        <div class="card-body">
+            <form method="post" class="needs-validation" novalidate>
+                {% csrf_token %}
+                Form fields -->
+                <!-- {{ form.as_p }}
+                <button type="submit" class="btn btn-success btn-block mt-4">
+                    <i class="fas fa-edit"></i> Update Item
+                </button>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <a href="{% url 'view_menu' %}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to Menu
+            </a>
+        </div>
+    </div>
+</div> -->
